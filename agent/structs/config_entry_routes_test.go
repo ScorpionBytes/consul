@@ -361,7 +361,6 @@ func TestHTTPRoute(t *testing.T) {
 				require.Equal(t, 1, route.Rules[0].Services[1].Weight)
 			},
 		},
-
 		"duplicate parents with no listener specified": {
 			entry: &HTTPRouteConfigEntry{
 				Kind: HTTPRoute,
